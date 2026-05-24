@@ -1,20 +1,23 @@
 import os
 from google import genai
 from google.genai import types
+from PIL import Image
+from dotenv import load_dotenv 
 
-# Set your API key in your environment
-# os.environ["GEMINI_API_KEY"] = "AIzaSyB6Edcu0fXb3B2gyzuGOGvpd9LGS0mM7gc"
+load_dotenv()
 
 client = genai.Client()
 
-prompt = input("Enter Your Prompt : ")
+# prompt = input("Enter Your Prompt : ")
 # Check and use a current model (e.g., gemini-2.5-flash)
+image = Image.open("images/cat.jpg")
+
 response = client.models.generate_content(
     model='gemini-2.5-flash',
-    contents = prompt,
+    contents = [image, "Tell me about this image"],
     config = types.GenerateContentConfig(
-        system_instruction = "Do not think about Football, your response should be within 50 words",
-        temperature = 0.2
+        system_instruction = "Response should be in 20 words, be funny",
+        temperature = 0.1
     )
 )
 print("The response is : ")
