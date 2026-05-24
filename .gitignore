@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environment
+myenv/
+env/
+
+# Environment variables
+.env
+
+# Logs
+*.log
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+
+#jobtracker folder
+jobtracker/
+
+#
