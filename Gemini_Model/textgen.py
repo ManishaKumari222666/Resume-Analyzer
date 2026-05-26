@@ -8,15 +8,13 @@ load_dotenv()
 
 client = genai.Client()
 
-# prompt = input("Enter Your Prompt : ")
-# Check and use a current model (e.g., gemini-2.5-flash)
 image = Image.open("images/cat.jpg")
 
 response = client.models.generate_content(
     model='gemini-2.5-flash',
     contents = [image, "Tell me about this image"],
     config = types.GenerateContentConfig(
-        system_instruction = "Response should be in 20 words, be funny",
+        system_instruction = "Response should be in 10 words, be funny",
         temperature = 0.1
     )
 )

@@ -1,0 +1,14 @@
+
+-------------------------
+Structured Text Generation
+
+Standard response can be more beneficial to extract information
+
+JSON
+ENUM
+
+-------------------
+
+using
+
+Enum, types, 
