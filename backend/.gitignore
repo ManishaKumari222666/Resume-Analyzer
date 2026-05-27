@@ -1,0 +1,50 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# virtual environment
+venv/
+env/
+.venv/
+
+# environment variables
+.env
+
+# logs
+*.log
+
+# database
+*.db
+*.sqlite3
+
+# IDE/editor files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# pytest
+.pytest_cache/
+
+# mypy
+.mypy_cache/
+
+# coverage reports
+htmlcov/
+.coverage
+coverage.xml
+
+# build files
+build/
+dist/
+*.egg-info/
+
+# FastAPI specific
+*.pid
+
+# uploads/temp files
+uploads/
+temp/
