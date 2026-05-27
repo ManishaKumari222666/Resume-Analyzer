@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./App.css";
 
 function App() {
 
@@ -25,17 +26,18 @@ function App() {
   };
 
   return (
-    <div style={{ padding: "40px" }}>
+    <div className="container">
 
-      <h1>Python Resume Analyzer</h1>
+      <h1  className="title">Python Resume Analyzer</h1>
 
       <input
         type="file"
         accept=".pdf"
+        className="file-input"
         onChange={(e) => setFile(e.target.files[0])}
       />
 
-      <button onClick={uploadResume}>
+      <button className="ai-button" onClick={uploadResume}>
         Analyze Resume
       </button>
 

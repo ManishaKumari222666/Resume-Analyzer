@@ -13,6 +13,37 @@
   }
 }
 
+body {
+
+  background: #f3f4f6;
+
+  font-family: Arial, sans-serif;
+}
+
+.container {
+
+  width: 800px;
+
+  margin: 60px auto;
+
+  background: white;
+
+  padding: 40px;
+
+  border-radius: 20px;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+
+  text-align: center;
+
+  margin-bottom: 30px;
+
+  color: #111827;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -28,10 +59,116 @@
   color: #61dafb;
 }
 
+.ai-button {
+
+  background: linear-gradient(to right,
+      #06b6d4,
+      #3b82f6);
+
+  color: white;
+
+  padding: 14px 28px;
+
+  border: none;
+
+  border-radius: 12px;
+
+  font-size: 16px;
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+
+  box-shadow: 0 5px 15px rgba(59, 130, 246, 0.4);
+
+  margin-top: 20px;
+}
+
+.ai-button:hover {
+
+  transform: scale(1.05);
+
+  box-shadow: 0 8px 25px rgba(59, 130, 246, 0.6);
+}
+
+/* Stylish PDF Upload Input */
+
+.file-input {
+
+  padding: 12px;
+
+  border: 2px dashed #6366f1;
+
+  border-radius: 12px;
+
+  background: #f8fafc;
+
+  color: #333;
+
+  font-size: 15px;
+
+  cursor: pointer;
+
+  width: 100%;
+
+  transition: 0.3s ease;
+
+  margin-top: 15px;
+}
+
+/* Hover Effect */
+
+.file-input:hover {
+
+  background: #eef2ff;
+
+  border-color: #4f46e5;
+}
+
+/* File Selector Button */
+
+.file-input::file-selector-button {
+
+  background: linear-gradient(
+    135deg,
+    #4f46e5,
+    #7c3aed
+  );
+
+  color: white;
+
+  border: none;
+
+  padding: 10px 18px;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  margin-right: 15px;
+
+  font-weight: 600;
+
+  transition: 0.3s ease;
+}
+
+/* Hover on Button */
+
+.file-input::file-selector-button:hover {
+
+  background: linear-gradient(
+    135deg,
+    #4338ca,
+    #6d28d9
+  );
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
