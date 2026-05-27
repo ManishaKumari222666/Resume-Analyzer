@@ -1,9 +1,0 @@
-Text Generation Guide
-
-Input -> Can be Text, image
-Output -> Text
-
--> System Instruction, temperature
--> Mutlimodal Behaviour
--> Streaming Response
-
